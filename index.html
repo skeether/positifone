@@ -144,7 +144,6 @@
 
             async function fetchVisitorInfo() {
                 try {
-                    // Используем серверную функцию вместо прямого API
                     const response = await fetch('/api/visitor');
                     if (!response.ok) throw new Error('Server request failed');
                     const data = await response.json();
